@@ -13,8 +13,11 @@
 ActiveRecord::Schema.define(version: 2019_05_20_084401) do
 
   create_table "perritos", force: :cascade do |t|
-    t.string "name"
+    t.string "nombre"
     t.integer "edad"
+    t.string "descripcion"
+    t.string "raza"
+    t.string "color"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

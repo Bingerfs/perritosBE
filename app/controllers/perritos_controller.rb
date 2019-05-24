@@ -46,6 +46,6 @@ class PerritosController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def perrito_params
-      params.require(:perrito).permit(:name, :edad)
+      params.require(:perrito).permit(:nombre, :edad, :descripcion, :raza, :color)
     end
 end
