@@ -4,8 +4,8 @@ class GatitosController < ApplicationController
   # GET /gatitos
   def index
     @gatitos = Gatito.all
-
     render json: @gatitos
+ 
   end
 
   # GET /gatitos/1

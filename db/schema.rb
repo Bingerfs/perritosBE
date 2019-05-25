@@ -10,7 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_20_084401) do
+ActiveRecord::Schema.define(version: 2019_05_24_220753) do
+
+  create_table "gatitos", force: :cascade do |t|
+    t.string "nombre"
+    t.integer "edad"
+    t.integer "nivel_maldad"
+    t.string "raza"
+    t.string "comidad_favorita"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "perritos", force: :cascade do |t|
     t.string "nombre"
